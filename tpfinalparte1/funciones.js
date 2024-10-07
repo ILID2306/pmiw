@@ -1,4 +1,4 @@
-function dibujarboton(posX, posY, texto, numdepantalla){
+function dibujarboton(posX, posY, texto){
   if (mouseX > posX && mouseX < posX+150 && mouseY > posY && mouseY < posY+30){
     fill(255);
   } else {
@@ -15,5 +15,11 @@ function dibujarboton(posX, posY, texto, numdepantalla){
   fill(255);
   }
   text(texto, posX+5, posY+21);
-    
 }
+
+function dibujartexto(numdetextos){
+ textFont("Font2");
+ textSize(16);
+ fill(255);
+ text(textos[numdetextos], 10, 360, 510, 150)
+ }
